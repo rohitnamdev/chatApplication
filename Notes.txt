@@ -1,0 +1,39 @@
+Chat Application in Golang
+Objective
+Build a basic real-time chat application in Golang, where users can join a single chat room, send
+and receive messages, and interact through a limited set of RESTful APIs. The application
+should use WebSocket for real-time messaging and Gin as the web framework.
+Project Requirements
+
+
+1. Framework and Basic Setup
+done --> ● Use Gin: Set up a basic Gin server to handle RESTful APIs.
+done --> ● Golang Templates: Use Golang’s template parsing to render a simple HTML page for
+the chat interface.
+
+
+2. Core Functionalities
+1. Single Chat Room:
+done -->    ○ Set up one default chat room for all users to join.
+done -->    ○ Users should enter their username before joining the chat.
+
+2. Message Broadcasting with WebSocket:
+done -->    ○ WebSocket Setup: Implement a WebSocket connection to enable real-time message broadcasting.
+doen -->    ○ Broadcast Messages: Allow users to send messages to the chat room, which should be broadcast to all connected users.
+
+not fully done --> 
+3. Frontend WebSocket Handling with Pure JavaScript:
+done -->    ○ Implement WebSocket functionality on the frontend using only JavaScript (no frameworks).
+done -->    ○ Allow users to send and receive messages in real-time.
+
+3. Basic APIs
+done -->    ● Join Chat API:
+done -->   ○ Create an endpoint to join the chat, requesting a username and allowing the user to connect to the WebSocket chat.
+done -->   ● Send Message API:
+    ○ Implement an API that uses WebSocket to send messages, broadcasting each message to all active users in the chat.
+
+
+Additional Notes
+done --> ● Focus on real-time message broadcasting and WebSocket handling.
+done --> ● Add a system in chat for any actions that require notifications (like joining or leaving).
+● No need for data persistence; this is a basic in-memory chat application.
